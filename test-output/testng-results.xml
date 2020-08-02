@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Hub spot Test automation regression suite" duration-ms="14032" started-at="2020-08-01T21:34:11Z" finished-at="2020-08-01T21:34:25Z">
+    <groups>
+    </groups>
+    <test name="login Page test" duration-ms="11337" started-at="2020-08-01T21:34:11Z" finished-at="2020-08-01T21:34:23Z">
+      <class name="com.qa.hubspot.tests.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@1bce4f0a]" name="setup" is-config="true" duration-ms="3852" started-at="2020-08-01T21:34:11Z" finished-at="2020-08-01T21:34:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifysignuplink()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@1bce4f0a]" name="verifysignuplink" duration-ms="4420" started-at="2020-08-01T21:34:15Z" finished-at="2020-08-01T21:34:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifysignuplink -->
+        <test-method status="PASS" signature="VerifyLoginPageTitleTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@1bce4f0a]" name="VerifyLoginPageTitleTest" duration-ms="9" started-at="2020-08-01T21:34:20Z" finished-at="2020-08-01T21:34:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@1bce4f0a]" name="loginTest" duration-ms="627" started-at="2020-08-01T21:34:20Z" finished-at="2020-08-01T21:34:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@1bce4f0a]" name="teardown" is-config="true" duration-ms="2404" started-at="2020-08-01T21:34:20Z" finished-at="2020-08-01T21:34:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+    </test> <!-- login Page test -->
+    <test name="home Page test" duration-ms="14032" started-at="2020-08-01T21:34:11Z" finished-at="2020-08-01T21:34:25Z">
+      <class name="com.qa.hubspot.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@4f7d0008]" name="setUp" is-config="true" duration-ms="8788" started-at="2020-08-01T21:34:11Z" finished-at="2020-08-01T21:34:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageHeaderTest()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@4f7d0008]" name="verifyHomePageHeaderTest" duration-ms="2814" started-at="2020-08-01T21:34:20Z" finished-at="2020-08-01T21:34:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageHeaderTest -->
+        <test-method status="PASS" signature="verifyLoggedInUser()[pri:2, instance:com.qa.hubspot.tests.HomePageTest@4f7d0008]" name="verifyLoggedInUser" duration-ms="104" started-at="2020-08-01T21:34:23Z" finished-at="2020-08-01T21:34:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedInUser -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:3, instance:com.qa.hubspot.tests.HomePageTest@4f7d0008]" name="verifyHomePageTitleTest" duration-ms="3" started-at="2020-08-01T21:34:23Z" finished-at="2020-08-01T21:34:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@4f7d0008]" name="teardown" is-config="true" duration-ms="2317" started-at="2020-08-01T21:34:23Z" finished-at="2020-08-01T21:34:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
+    </test> <!-- home Page test -->
+  </suite> <!-- Hub spot Test automation regression suite -->
+</testng-results>
