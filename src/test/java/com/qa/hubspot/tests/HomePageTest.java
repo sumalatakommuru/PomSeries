@@ -1,42 +1,25 @@
 package com.qa.hubspot.tests;
 
-import java.util.Properties;
-
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.qa.hubspot.base.BasePage;
+import com.qa.hubspot.base.BaseTest;
 import com.qa.hubspot.pages.Homepage;
-import com.qa.hubspot.pages.LoginPage;
 import com.qa.hubspot.utils.Constants;
 
-public class HomePageTest {
+public class HomePageTest extends BaseTest{
 	
-WebDriver driver;
-Properties prop;
-BasePage basepage;
-LoginPage loginpage;
-Homepage  homePage;
-
-@BeforeTest
-
-public void setUp() {
-
-	basepage = new BasePage();
-	prop = basepage.init_prop();
-
-	driver = basepage.inti_driver(prop);
-
-	loginpage = new LoginPage(driver);
+	Homepage homePage;
 	
+	@BeforeClass
+	
+	public void homeSetup() {
+		
 	homePage = loginpage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
-
-}
-
-
+		
+	}
+	
 
 @Test(priority = 3)
 public void verifyHomePageTitleTest () {
@@ -81,13 +64,7 @@ public void verifyLoggedInUser() {
 
 
 
-@AfterTest
 
-public void teardown() {
-
-	driver.quit();
-
-}
 
 
 

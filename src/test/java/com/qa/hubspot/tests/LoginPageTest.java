@@ -12,31 +12,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.qa.hubspot.base.BasePage;
+import com.qa.hubspot.base.BaseTest;
 import com.qa.hubspot.pages.Homepage;
 import com.qa.hubspot.pages.LoginPage;
 import com.qa.hubspot.utils.Constants;
 
-public class LoginPageTest {
-
-	WebDriver driver;
-
-	BasePage basepage;
-	LoginPage loginpage;
-	Properties prop;
-	
-
-	@BeforeTest
-
-	public void setup() {
-
-       basepage = new BasePage();
-		prop = basepage.init_prop();
-
-		driver = basepage.inti_driver(prop);
-
-		loginpage = new LoginPage(driver);
-
-	}
+public class LoginPageTest extends BaseTest {
 
 	@Test(priority = 2)
 
@@ -64,12 +45,6 @@ public class LoginPageTest {
 
 	}
 
-	@AfterTest
-
-	public void teardown() {
-
-		driver.quit();
-
-	}
+	
 
 }
